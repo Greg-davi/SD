@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediascreen.css">
+</head>
+<body>
+
+    <nav class="nav-bar">
+        <h2>SD</h2>
+
+        <div class="links">
+            <a href="./index.html"><button class="active">Register</button></a>
+            <a href="./login.html"><button>Login</button></a>
+        </div>
+    </nav>
+    <!-- <img src="./design/Screenshot (85).png" alt=""> -->
+
+    <div class="container">
+        <div class="left"></div>
+        <div class="right">
+            <h3>Hello There!</h3>
+            <p>Fill out the form to create an account with us</p>
+
+            <form action="">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="email" placeholder="Your Email Address">
+                <input type="password" placeholder="Set password">
+                <input type="password" placeholder="Confirm password">
+
+                <select name="" id="">
+                    <option value="course"> Choose your course</option>
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="UI">UI/UX</option>
+                    <option value="product-design">Product design</option>
+                </select>
+
+                <button class="upload-button" onclick="document.getElementById('fileInput').click()">Upload Image</button>
+                <input type="file" id="fileInput" style="display: none;" accept="image/*">
+                
+                <input type="submit" id="submit" onclick="window.location.href='./profile-page.html'">
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"> </script>
+    
+</body>
+</html>
